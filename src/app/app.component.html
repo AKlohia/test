@@ -1,0 +1,139 @@
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+</style>
+
+<style>
+  #parents {
+
+    width: 100%;
+  }
+  #desc{
+    width: 903px;
+height: 82px;
+text-align: center;
+font: normal normal medium 16px/25px Poppins;
+letter-spacing: 0px;
+color: #004783;
+opacity: 1;
+font-size: 16px;
+margin-left:9.3rem ;
+
+}
+#app-attraction-carts{
+  display: flex;
+    width: 903px;
+margin-left:7.5rem ;
+
+gap: 1rem;
+}
+#selector_heading{
+    font-size: 25px;
+    color: #004783;
+}
+#selector{
+    width: 160px;
+height: 40px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border-radius: 4px 4px 0px 0px;
+opacity: 1;
+font-size: 14px;
+text-align: center;
+}
+
+#things_to_do{
+  display: grid;
+font-family: sans-serif;
+
+
+grid-template-columns: repeat(2,10rem);
+column-gap: 44rem;
+margin-left: 8rem;
+margin-top: 3rem;
+
+}
+#main_things_do{
+    display: grid;
+    grid-template-columns: repeat(2,10rem);
+    column-gap: 33rem;
+    /* margin-left: 7.1rem; */
+row-gap: 2rem;
+    
+}
+#map_man{
+  /* left: 33rem; */
+    width: 262px;
+    height: 558px;
+    position: absolute;
+    z-index: 10000;
+    /* bottom: 1rem; */
+    top: 80rem;
+  left: 33rem;
+}
+</style>
+<div id="parents">
+  <app-tabview>
+
+  </app-tabview>
+  <div id="desc">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur magni eum culpa porro eos, quidem quia ea doloremque assumenda nostrum officiis! Eveniet velit qui nobis.
+  </div>
+<div id="app-attraction-carts">
+  <app-attraction-carts></app-attraction-carts>
+<app-attraction-carts></app-attraction-carts>
+<app-attraction-carts></app-attraction-carts>
+<app-attraction-carts></app-attraction-carts>
+
+</div>
+<!-- <div 
+id="btn-pagination"
+> -->
+  <app-button [imagepath] = "paginationImage_next" [next_background] = "Image_next_background"  ></app-button>
+  <app-button [imagepath] = "pageination_prev" ></app-button>
+  
+
+<!-- </div> -->
+<!-- <img src="../assets/Path 11.png" alt=""> -->
+<div  id="things_to_do">
+  <div
+  id="selector_heading"
+  
+  > Things to do</div>
+  <div>
+   <span
+   style="color: #6E9EB5;"
+   >
+       Filter
+   </span>
+   <br>
+   <span 
+   >
+       <select name="" id="selector">
+           <option value="">Selector Category</option>
+       </select>
+   </span>
+  </div>
+  
+<div 
+id="main_things_do"
+>
+
+  <app-things-to-carts></app-things-to-carts>
+  <app-things-to-carts></app-things-to-carts>
+  <app-things-to-carts></app-things-to-carts>
+  <app-things-to-carts></app-things-to-carts>
+  
+</div>
+ </div>
+ <!-- <div > -->
+  <img id="map_man" src="../assets/Group 4340.png" alt="">
+ <!-- </div> -->
+ <!-- <app-button [imagepath] = "paginationImage_next" [next_background] = "Image_next_background"  ></app-button>
+ <app-button [imagepath] = "pageination_prev" [next_background] = "Image_Prev_background"  ></app-button>
+  -->
+
+
+
+</div>
