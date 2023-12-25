@@ -1,14 +1,24 @@
 <style>
-  * {
-    margin: 0;
-    padding: 0;
-  }
+
 </style>
 
 <style>
+ *{
+  margin: 0;
+  padding: 0;
+ }
+  #main{
+    width: 100%;
+  display: flex;
+  justify-content: center;
+  }
   #parents {
 
-    width: 100%;
+    /* width: 100%; */
+
+  /* border: 2px solid black; */
+  
+          
   }
   #desc{
     width: 903px;
@@ -70,23 +80,34 @@ row-gap: 2rem;
     z-index: 10000;
     /* bottom: 1rem; */
     top: 80rem;
-  left: 33rem;
+  /* left: 43rem; */
 }
 </style>
-<div id="parents">
-  <app-tabview>
 
-  </app-tabview>
+
+<div id = "main">
+  <!-- <app-form-app></app-form-app> -->
+
+<div id="parents">
+  <span>
+    <app-tabview>
+
+    </app-tabview>
+  </span>
+ <span>
   <div id="desc">
     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur magni eum culpa porro eos, quidem quia ea doloremque assumenda nostrum officiis! Eveniet velit qui nobis.
   </div>
-<div id="app-attraction-carts">
+ </span>
+<span>
+  <div id="app-attraction-carts">
+    <app-attraction-carts></app-attraction-carts>
   <app-attraction-carts></app-attraction-carts>
-<app-attraction-carts></app-attraction-carts>
-<app-attraction-carts></app-attraction-carts>
-<app-attraction-carts></app-attraction-carts>
-
-</div>
+  <app-attraction-carts></app-attraction-carts>
+  <app-attraction-carts></app-attraction-carts>
+  
+  </div>
+</span>
 <!-- <div 
 id="btn-pagination"
 > -->
@@ -127,13 +148,14 @@ id="main_things_do"
   
 </div>
  </div>
- <!-- <div > -->
+ <div style="display: flex; justify-content: center;padding-left: 6rem;" >
   <img id="map_man" src="../assets/Group 4340.png" alt="">
- <!-- </div> -->
+ </div>
  <!-- <app-button [imagepath] = "paginationImage_next" [next_background] = "Image_next_background"  ></app-button>
  <app-button [imagepath] = "pageination_prev" [next_background] = "Image_Prev_background"  ></app-button>
   -->
 
 
 
+</div>
 </div>
